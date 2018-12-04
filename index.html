@@ -4,10 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <title>Hangman</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Word Guess</title>
 </head>
 <body>
+        <div class="jumbotron jumbotron-fluid" style="background-image: url(assets/images/header.jpg); background-size: cover ;">
+                <div class="container">
+                  <h1 class="display-4"></h1>
+                 </div>
+              </div>
     
+    <div class="container">
+        <div class="row">
+            <div class="col-12 py-5 " style="text-align: center;">
+                <h1>Press any key to get started!</h1>
+            </div>
+        </div>
+        <div class="row py-5" style="text-align: center;">
+            <div class="col-12 col-md-6" id="currentWord" >
+                <h2>current word
+                    <br>
+                   <span id="placeholders">_______ ____</span> 
+                </h2>
+            </div>
+            <div class="col-12 col-md-6">
+                    <h2>Letters Already Guessed
+                        <br>
+                        <span id="lettersGuessed"></span>
+                    </h2>
+                </div>
+        </div>
+        <div class="row py-5" style="text-align: center;">
+            <div class="col-12 col-md-4">
+                <h2>Guesses Remaining
+                    <br>
+                    <span id="remaining">0</span>
+                </h2>
+            </div>
+            <div class="col-12 col-md-4">
+                    <h2>Wins
+                        <br>
+                        <span id="wins">0</span>
+                    </h2>
+                </div>
+            <div class="col-12 col-md-4">
+                <h2>Losses
+                    <br>
+                    <span id="losses">0</span>
+                </h2>
+            </div>
+        </div>
+
+
+    </div>
+  
+    
+
+    <script src="assets/javascript/game.js"></script>
 </body>
 </html>
