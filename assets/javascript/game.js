@@ -15,6 +15,7 @@ var lettersGuessedBank = [];
 var incorectLettersBank = [];
 var gameRunning = false;
 var placeholdersArr =[];
+var audio = new Audio('https://www.drodd.com/big-lebowski-sound/abides.wav');
 
 //new game function
 
@@ -98,6 +99,7 @@ function checkWin() {
        wins++;
        gameRunning = false;
        jwins.textContent = wins;
+       audio.play();
     }
 }
 
