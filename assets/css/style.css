@@ -1,10 +1,13 @@
-header {
+#header {
     text-align: center;
+    
  
-    height: 200px;
+   
 }
 
 body {
-    background-color: black;
+    background: url(../../assets/images/The-Big-Lebowski-Cast-Reunion-Photos-20th-Anniversary.jpg) no-repeat;
+    background-size: cover;
     color: white;
+    font-family: Perpetua,Baskerville,Big Caslon,Palatino Linotype,Palatino,URW Palladio L,Nimbus Roman No9 L,serif; 
 }
